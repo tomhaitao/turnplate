@@ -1,0 +1,280 @@
+﻿body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{color:#333; font-size:12px;font-family:"Microsoft YaHei"}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+input{ font-size:12px;}
+a{ text-decoration:none; color:#000;}
+a:hover{color:#c00; text-decoration:none;}
+.clear{clear:both;}
+
+/* 大转盘样式 */
+.banner{display:none;width:95%;margin-left:auto;margin-right:auto;margin-bottom: 20px;}
+.banner .turnplate{display:block;width:100%;position:relative;margin-top: 10px;}
+.banner .turnplate canvas.item{width:100%;}
+.banner .turnplate .pointer{
+    position:absolute;
+    width:31.5%;
+    height:42.5%;
+    left:34.6%;
+    top:23%;
+    z-index: 99;
+    /*background-image: url(../images/turnplate-pointer.png);*/
+}
+
+/* 开始页样式 */
+.homePage{
+    /*text-align: center;*/
+}
+.homePage img{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.homePage .directionP{
+    color: #d8a460;
+    font-size: 12pt;
+    margin-left: 15%;
+    position: absolute;
+}
+.homePage .startBtn{
+    position: absolute;
+    left: 10%;
+    bottom: 80px;
+    width: 80%;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15pt;
+    color: #fff;
+    background-color: #f05d25;
+    border: #f05d25;
+}
+/*.homePage .gameDirectionBtn{
+    position: absolute;
+    top: 55%;
+    margin-left: 40%;
+}*/
+/*.directionDiv{
+    display: none;
+}*/
+
+/* 选餐厅页样式 */
+#startPage{
+    display: none;
+}
+#startPage .titleDiv{
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    color: #999999;
+    font-size: 12pt;
+}
+.titleDiv textarea{
+    border-width: 0;
+    width: 100%;
+    height: 88px;
+    text-align: center;
+    color: #999999;
+    font-size: 12pt;
+}
+#startPage .footer{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    background-color: #dcdddd;
+    text-align: center;
+    line-height: 100px;
+}
+.footer .minus{
+    color: #999999;
+    font-size: 25pt;
+    border: 0;
+    background-color: #fff;
+    height: 50%;
+    border-radius: 5px 0px 0px 5px;
+}
+.footer .inputNum{
+    width: 65px;
+    height: 46%;
+    font-size: 15pt;
+    margin-left: -4px;
+    /* border-bottom-width: 0; */
+    /* border-top-width: 0; */
+    border-top-width: 0;
+    border-right-color: #999999;
+    padding-left: 10px;
+    color: #999999;
+}
+.footer .plus{
+    color: #999999;
+    font-size: 25pt;
+    border: 0;
+    background-color: #fff;
+    height: 50%;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -4px;
+}
+.footer .startBtn{
+    color: #fff;
+    background-color: #999999;
+    font-size: 15pt;
+    border-radius: 5px;
+    border: #999999;
+    width: 40%;
+    height: 50%;
+    margin-left: 20px;
+}
+.result{
+    width: 100%;
+    margin-top: 20px;
+    height: 11em;
+}
+.banner .judgeDiv{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 20px;
+    text-align: center;
+    display: none;
+}
+.judgeDiv p{
+    color: #d8a460;
+    font-size: 11pt;
+}
+.judgeDiv input{
+    width: 80%;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 15pt;
+    color: #fff;
+    background-color: #f05d25;
+    border: #f05d25;
+    margin-top: 10px;
+}
+/* 首页样式 */
+.topnav {
+    width: 320px;
+    padding: 40px 28px 25px 0;
+    font-family: "CenturyGothicRegular", "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+ul.topnav {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    line-height: 0.5em;
+    list-style: none;
+}
+
+ul.topnav li {
+    width: 320px;
+    float: left;
+}
+
+ul.topnav li a {
+    line-height: 10px;
+    font-size: 11px;
+    padding: 10px 5px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*ul.topnav li a:hover {
+    background-color:#675C7C;
+    color:white;
+}*/
+
+ul.topnav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+ul.topnav ul li {
+    margin: 0;
+    padding: 0;
+    /*clear: both;*/
+    width: 150px;
+    float: left;
+}
+
+ul.topnav ul li a {
+    padding-left: 20px;
+    font-size: 10px;
+    font-weight: normal;
+    outline:0;
+    color: #666;
+}
+
+/*ul.topnav ul li a:hover {
+    background-color:#D3C99C;
+    color:#675C7C;
+}*/
+
+ul.topnav ul ul li a {
+    color:silver;
+    padding-left: 40px;
+}
+
+/*ul.topnav ul ul li a:hover {
+    background-color:#D3CEB8;
+    color:#675C7C;
+}*/
+
+ul.topnav span{
+    float:right;
+}
+
+.topnav .selected{
+    background-color:#67cfe3;
+    color:#675C7C;
+}
+
+.overPage{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #938882;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.overPage .resultDiv{
+    width: 80%;
+    height: 50%;
+    background-color: #FFFFFF;
+    margin-top: 30%;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+.overPage .resultDiv img{
+    width: 15%;
+    margin-top: 3px;
+    margin-left: 83%;
+}
+.overPage .resultDiv .p1{
+    text-align: center;
+    margin-top: 10%;
+}
+.overPage .resultDiv .p2{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2em;
+}
+.overPage .resultDiv .btnRestart{
+    width: 80%;
+    height: 15%;
+    margin-left: 10%;
+    margin-top: 20%;
+    border-color: #ff0000;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: #fff;
+    color: #ff0000;
+}

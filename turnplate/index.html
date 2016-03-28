@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<meta name="full-screen" content="true"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta name="x5-fullscreen" content="true"/>
+<title>大转盘活动</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/awardRotate.js"></script>
+<script type="text/javascript" src="js/scriptbreaker-multiple-accordion-1.js"></script>
+<script type="text/javascript" src="js/rotation.js"></script>
+</head>
+<body style="overflow-x:hidden;">
+    <!--<img src="images/1.png" id="shan-img" style="display:none;" />
+    <img src="images/2.png" id="sorry-img" style="display:none;" />-->
+	<div id="home">
+		<div class="homePage">
+			<img src="images/icon.png">
+			<p class="directionP">还在犹豫不知道中午去哪吃吗？<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp选择餐厅，PK一下~!</p>
+			<input id="startGame" type="button" value="我想试试 !" class="startBtn"/>
+			<!--<input id="directionBtn" type="button" value="游戏说明" class="gameDirectionBtn"/>-->
+		</div>
+		<!--<div class="directionDiv">
+			<p>单击选中餐厅，然后输入转盘次数即可进入转盘选取模式，转盘次数需要大于所选餐厅个数</p>
+		</div>-->
+	</div>
+	<div class="banner">
+		<div class="turnplate" style="background-image:url(images/turnplate-bg.png);background-size:100% 100%;">
+			<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+			<img class="pointer" src="images/turnplate-pointer.png"/>
+			<!--<div class="pointer"></div>-->
+		</div>
+		<textarea id="resultText" class="result"></textarea>
+		<div class="judgeDiv">
+			<p>两家餐厅并列领先,再转一次即分胜负!</p>
+			<input type="button" value="再转一次" id="restart"/>
+		</div>
+	</div>
+	<div id="startPage">
+		<div class="footer">
+			<input type="button" value="-" class="minus"/>
+			<input id="count" type="tel" class="inputNum" value="转n次"/>
+			<input type="button" value="+" class="plus"/>
+			<input id="starbtn" class="startBtn" type="button" value="现在去转!"/>
+		</div>
+		<div class="titleDiv">
+			<textarea>请选择餐厅</textarea>
+		</div>
+		<div>
+			<ul id="topnav" class="topnav">
+				<li><a href="#">华贸附近餐厅</a>
+					<ul>
+						<li><a href="#">绿茶餐厅</a></li>
+						<li><a href="#">金鼎轩</a></li>
+						<li><a href="#">西贝莜面村</a></li>
+						<li><a href="#">呷哺呷哺</a></li>
+						<li><a href="#">胡椒厨房</a></li>
+						<li><a href="#">川成元麻辣香锅</a></li>
+						<li><a href="#">武士地板烧</a></li>
+						<li><a href="#">隐泉之语</a></li>
+						<li><a href="#">湄洲小吃</a></li>
+						<li><a href="#">康师傅私房牛肉面</a></li>
+					</ul>
+				</li>
+				<li><a href="#">金地附近餐厅</a>
+					<ul>
+						<li><a href="#">鲜芋仙</a></li>
+						<li><a href="#">一茶一坐</a></li>
+						<li><a href="#">王品台塑牛排</a></li>
+						<li><a href="#">南小馆</a></li>
+						<li><a href="#">小辉哥火锅</a></li>
+					</ul>
+				</li>
+				<li><a href="#">soho附近餐厅</a>
+					<ul>
+						<li><a href="#">小豆面馆</a></li>
+						<li><a href="#">木桶三国</a></li>
+						<li><a href="#">小面</a></li>
+						<li><a href="#">聚麻</a></li>
+						<li><a href="#">张亮麻辣烫</a></li>
+						<li><a href="#">云之遥</a></li>
+						<li><a href="#">肯德基</a></li>
+						<li><a href="#">丸福日本烧肉店</a></li>
+						<li><a href="#">猫眼餐厅</a></li>
+						<li><a href="#">DQ</a></li>
+						<li><a href="#">麦饭堂</a></li>
+						<li><a href="#">兰州牛肉拉面</a></li>
+						<li><a href="#">港艺火锅</a></li>
+						<li><a href="#">杨国富麻辣烫</a></li>
+						<li><a href="#">一品三笑</a></li>
+						<li><a href="#">真功夫</a></li>
+						<li><a href="#">吉野家</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="overPage">
+		<!--<p>餐厅选择结束,今日就餐的餐厅为:</p>
+		<textarea class="result"></textarea>-->
+		<div class="resultDiv">
+			<img src="images/close.png">
+			<p class="p1">今天就去吃:</p>
+			<p class="p2">fdsfsdfds</p>
+			<input type="button" value="再来一次" class="btnRestart">
+		</div>
+	</div>
+</body>
+</html>
